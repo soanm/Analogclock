@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.clock{
+    background-color:#ececec;
+    width:300px;
+    height:300px;
+    margin:8% auto 0;
+    border-radius: 50%;
+    border:10px solid #333;
+    box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+    position: relative;
+}
+.dot{
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    background:black;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    z-index:10;
+    box-shadow:0 2px 4px -1px rgba(0,0,0,0.8)
+
+}
+.hour_hand{
+ position: absolute;
+ width:4px;
+ height:65px;
+ background:blue;
+ top:79px;
+ left:50%;
+ margin-left:-2px;
+ border-top-left-radius: 50%;
+ border-top-right-radius: 50%;
+ z-index:5;
+ transform-origin: 50% 72px;
+
+}
+.minute_hand{
+    position: absolute;
+    width:4px;
+    height:100px;
+    background:blue;
+    top:46px;
+    left:50%;
+    margin-left:-2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index:6;
+    transform-origin: 50% 105px;
+}
+.second_hand{
+    position: absolute;
+    width:4px;
+    height:120px;
+    background:brown;
+    top:26px;
+    left:50%;
+    margin-left:-1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index:7;
+    transform-origin: 50% 125px;
+}
+span{
+    display:inline-block;
+    position: absolute;
+    color:#222;
+    font-size:22px;
+    font-family:"Poiret One";
+    font-weight:700;
+    z-index:4;
+}
+.h12{
+ top:30px;
+ left:50%;
+ margin-left:-9px;
+}
+.h3{
+    top:136px;
+    right:30px;
+}
+.h6{
+    bottom:30px;
+    left:50%;
+    margin-left:-5px;
+}
+.h9{
+    left:32px;
+    top:140px;
+}
+.diallines{
+    position: absolute;
+    z-index: 2;
+    width:2px;
+    height:15px;
+    background:#666;
+    left:50%;
+    margin-left:-1px;
+    transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n){
+    position: absolute;
+    z-index: 2;
+    width:4px;
+    height:25px;
+    background:#666;
+    left:50%;
+    margin-left:-1px;
+    transform-origin: 50% 150px;
+}
+.date{
+    position:absolute;
+    width:120px;
+    height:20px;
+    border-radius: 7px;
+    background-color: #888;
+    text-align: center;
+    line-height: 20px;
+    color:white;
+    font-size:11px;
+    top:80px;
+    left:50%;
+    margin-left:-60px;
+    font-weight:700;
+    z-index:3;
+    letter-spacing: 3px;
+}
+.day{
+    position:absolute;
+    width:120px;
+    height:20px;
+    border-radius: 7px;
+    background-color: #888;
+    text-align: center;
+    line-height: 20px;
+    color:white;
+    font-size:11px;
+    top:200px;
+    left:50%;
+    margin-left:-60px;
+    font-weight:700;
+    z-index:3;
+    letter-spacing: 3px;
+}
